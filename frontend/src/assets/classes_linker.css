@@ -1,0 +1,89 @@
+.box-all {
+    width: 900px;
+    height: 300px;
+    border: rgb(44, 211, 86) 2px solid;
+    box-shadow: inset 0 0 3px rgba(0,0,0,0.5); 
+    margin: 10px 20px;
+    padding: 0;
+    border-radius: 5px;
+    overflow-y: auto;
+}
+
+.box-all ul {
+    list-style: none;
+    margin: 10px 20px;
+    padding: 0;
+}
+
+.box-selected {
+    width: 900px;
+    height: 300px;
+    border: rgb(44, 211, 86) 2px solid;
+    box-shadow: inset 0 0 3px rgba(0,0,0,0.5); 
+    margin: 10px 20px;
+    padding: 0;
+    border-radius: 5px;
+    overflow-y: auto;
+}
+
+.box-selected ul {
+    list-style: none;
+    margin: 10px 20px;
+    padding: 0;
+}
+
+.box-container {
+    display: flex;
+    align-items: center;
+}
+
+.arrow {
+    width: 100px;
+    height: 50px;
+}
+
+.arrow img {
+    width: 100px;
+    height: 50px;
+    color: green;
+}
+
+.arrow:hover {
+    cursor: pointer;
+}
+
+
+ul.striped-list > li.selected-item:hover {
+    cursor: pointer;
+    /* background-color: #b8d2d4; */
+    background-color: #91d7dd;
+}
+
+ul.striped-list > li.deselected-item:hover {
+    cursor: pointer;
+    /* background-color: #b8d2d4; */
+    background-color: #91d7dd;
+}
+
+ul.striped-list {
+    list-style-type: none;
+    margin: 0;
+    /* padding: 0; */
+}
+
+ul.striped-list > li:nth-of-type(odd) {
+    background-color: #e9e9f9 ;
+}
+
+ul.striped-list > li {
+    border-bottom: 1px solid rgb(221,221,221);
+    padding: 6px;
+}
+
+ul.striped-list > li.selected-item {
+    background-color: #63cdd7;
+}
+
+ul.striped-list > li:last-child {
+    border-bottom: none;
+}
